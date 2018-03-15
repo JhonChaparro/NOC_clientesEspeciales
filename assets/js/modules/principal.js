@@ -18,7 +18,7 @@ $(function () {
                 var registro = ini.tablaClientes.row(tr).data();
                 //si selecciona el header de la tabla no se muestre el modal
                 if (registro != undefined) {
-                    location.href =  app.urlTo('CclientServices/specificClient?idCliente=' + registro.k_id_cliente);
+                    location.href =  app.urlTo('CclientServices/specificClient?idCliente=' + registro.k_id_cliente + '&cliente=' + registro.n_name_cliente);
 //                    location.href =   baseurl + '/clientService?idCliente='+registro.k_id_cliente;
                 }
             }
