@@ -10,8 +10,12 @@ class CclientServices extends CI_Controller {
     }
 
     public function specificClient() {
-        //Comprobar si existe una sesión...
         $this->load->view('clientService');
+    }
+
+    public function getListContacs(){
+    	$idCliente = $this->input->post("idCliente");
+    	$this->
     }
 }
 
