@@ -36,7 +36,7 @@ $(function () {
             // ini.fillTable([]);
             //Realiza la petición AJAX para traer los datos...
             var alert = dom.printAlert('Consultando registros, por favor espere.', 'loading', $('#principalAlert'));
-            app.post('OtHija/getOtsAssigned')
+            app.post('Cliente/getAllClient')
                     .complete(function () {
                         alert.hide();
                         $('.contentPrincipal').removeClass('hidden');
@@ -56,6 +56,11 @@ $(function () {
         fillNA: function () {
             return "N/A";
         },
+        getLogo: function (obj) {
+            return '<div class="btn-group">'
+                    + '<img src="' + baseurl + '/assets/img/' + obj.k_id_cliente + '.png" alt="' + obj.n_name_cliente + '" height="100" width="200">'
+                    + '</div>';
+        },
         fillTable: function (data) {
             if (ini.tablaClientes) {
                 dom.refreshTable(ini.tablaClientes, data);
@@ -63,12 +68,8 @@ $(function () {
             }
             ini.tablaClientes = $('#tablaClientes').DataTable(dom.configTable(data,
                     [
-                        {title: "Id Cliente Onyx", data: "id_cliente_onyx"},
-                        {title: "Nombre Cliente", data: "nombre_cliente"},
-                        {title: "Id Orden Trabajo Hija", data: "id_orden_trabajo_hija"},
-                        {title: "Ot Hija", data: "ot_hija"},
-                        {title: "Estado Orden Trabajo Hija", data: "estado_orden_trabajo_hija"},
-                        {title: "Dias", data: "n_days"},
+                        {title: "Logo", data: ini.getLogo},
+                        {title: "Nombre Cliente", data: "n_name_cliente"},
                     ],
                     ));
         }
