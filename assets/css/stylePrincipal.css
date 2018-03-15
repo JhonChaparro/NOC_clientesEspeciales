@@ -75,7 +75,7 @@ h1 {
 h2 {
     color: #207be5;
 }
-h2:after {
+/* h2:after {
     display: block;
     content: "";
     height: 2px;
@@ -83,7 +83,7 @@ h2:after {
     background:  #207be5 ;
     margin: 10px auto 40px;
 
-}
+} */
 
 
 h3 {
@@ -870,4 +870,11 @@ nav {
 }
 table td{
     vertical-align: middle !important;
+}
+
+
+.panelCami {
+    height: 40px;
+    
+    padding-top: 0;
 }
