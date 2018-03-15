@@ -31,6 +31,9 @@
                             <li>
                                 <a href="<?= URL::to('User/principal') ?>"><i class="fa fa-fw fa-home"></i>&nbsp;&nbsp;Home</a>
                             </li>
+<!--                            <li>
+                                <a href="<?= URL::to('User/reports') ?>"><i class="fa fa-fw fa-home"></i>&nbsp;&nbsp;Reportes</a>
+                            </li>-->
                             <li>
                                 <a id="exitLink" href="<?= URL::to('User/logout') ?>" /><i class="fa fa-fw fa-power-off"></i>&nbsp;&nbsp;Salir</a>
                             </li>
