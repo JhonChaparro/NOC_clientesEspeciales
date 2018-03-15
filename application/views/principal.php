@@ -8,6 +8,13 @@
                 <a href="#" class="close">&times;</a>
                 <p id="text" class="m-b-0 p-b-0"></p>
             </div>
+            <style type="text/css">
+                table td:nth-child(1){
+                    width: 50%;
+                    text-align: center;
+                    vertical-align: middle !important;
+                }
+            </style>
             <label id="lblProgressInformation" class="hidden">0 de 0</label>
             <div class="progress hidden" id="progressProcessImportData">
                 <div class="progress-bar progress-bar-striped active" role="progressbar"
@@ -36,6 +43,7 @@
         </div>        
         <!-- CUSTOM SCRIPT   -->
         <?php $this->load->view('parts/generic/scripts'); ?>
+        <script type="text/javascript"> var baseurl = "<?php echo URL::base() ?>"</script>
         <script scr="<?= URL::to("assets/plugins/sweetalert-master/dist/sweetalert.min.js") ?>" ></script>
         <script type="text/javascript" src="<?= URL::to("assets/js/modules/principal.js") ?>"></script>
     </body>
