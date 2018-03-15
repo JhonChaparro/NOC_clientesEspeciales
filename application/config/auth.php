@@ -20,7 +20,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => UsuariosModel::class,
+            'model' => UserModel::class,
         ],
     ],  
 ];

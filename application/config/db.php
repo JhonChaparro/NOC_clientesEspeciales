@@ -57,7 +57,7 @@ return [
             'driver' => 'mysql',
             'host' => 'localhost',
             'port' => '3306',
-            'database' => 'matriz_riesgo',
+            'database' => 'noc_clientes_especiales',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
