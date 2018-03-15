@@ -89,14 +89,14 @@ class Auth {
 
     public static function isRole($role) {
         if (Auth::check()) {
-            return strtoupper(Auth::user()->n_rol_ususario) == $role;
+            return strtoupper(Auth::user()->n_role_user) == $role;
         } else {
             return false;
         }
     }
 
     public static function getRole() {
-        return strtoupper(Auth::user()->n_rol_ususario);
+        return strtoupper(Auth::user()->n_role_user);
     }
 
     public static function isCoordinador() {

@@ -16,7 +16,18 @@
                 </div>
             </div>
             <div>
-                <script type='text/javascript' src='http://172.19.193.174/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 100%; height: 561px;'><object class='tableauViz' width='100%' height='561' style='display:none;'><param name='host_url' value='http%3A%2F%2F172.19.193.174%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TVIPInstalaciones&#47;Dashboard1' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /><param name='filter' value='iframeSizedToWindow=true' /></object></div>
+
+                <form class= 'well form-horizontal'>
+                    <fieldset>
+                        <div class="row">
+                            <div class="col col-md-12 p-t-40">
+                                <table id="tablaClientes" class="table table-hover table-striped" width="100%"></table>
+                                <br/>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
             </div>
         </div>
         <!--footer Section -->
@@ -24,6 +35,8 @@
             Zolid By ZTE Colombia | All Right Reserved
         </div>        
         <!-- CUSTOM SCRIPT   -->
+        <?php $this->load->view('parts/generic/scripts'); ?>
         <script scr="<?= URL::to("assets/plugins/sweetalert-master/dist/sweetalert.min.js") ?>" ></script>
+        <script type="text/javascript" src="<?= URL::to("assets/js/modules/principal.js") ?>"></script>
     </body>
 </html>
