@@ -10,12 +10,12 @@
             </div>
             
             
-            <h2><strong>Cliente </strong>xxxxxxx</h2>
+            <h2><strong><?php echo $_GET['cliente']; ?></strong></h2>
 
             <div class="panel-group" id="accordion">
 
                 <div class="panel panel-default">
-                  <div class="panel-heading">
+                  <div class="panel-heading panelCami">
                     <h4 class="panel-title">
                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Cronograma</a>
                     </h4>
@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="panel panel-default">
-                  <div class="panel-heading">
+                  <div class="panel-heading panelCami">
                     <h4 class="panel-title">
                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">DRP</a>
                     </h4>
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="panel panel-default">
-                  <div class="panel-heading">
+                  <div class="panel-heading panelCami">
                     <h4 class="panel-title">
                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Reportes</a>
                     </h4>
@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="panel panel-default">
-                  <div class="panel-heading">
+                  <div class="panel-heading panelCami">
                     <h4 class="panel-title">
                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Procesos</a>
                     </h4>
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="panel panel-default">
-                  <div class="panel-heading">
+                  <div class="panel-heading panelCami">
                     <h4 class="panel-title">
                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Inventario de Servicios</a>
                     </h4>
@@ -71,8 +71,8 @@
                   </div>
                 </div>
 
-                <div class="panel panel-default">
-                  <div class="panel-heading">
+                <div class="panel panel-primary">
+                  <div class="panel-heading panelCami">
                     <h4 class="panel-title">
                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Matriz de Contactos</a>
                     </h4>
