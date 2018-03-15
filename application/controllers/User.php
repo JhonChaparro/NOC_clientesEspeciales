@@ -41,6 +41,13 @@ class User extends CI_Controller {
         $answer['user'] = Auth::user();
         $this->load->view('principal', $answer);
     }
+    
+    public function reports() {
+        if (!Auth::check()) {
+            Redirect::to(URL::base());
+        }
+        $this->load->view('reports');
+    }
 
     public function logout() {
         Auth::logout();

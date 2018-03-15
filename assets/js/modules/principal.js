@@ -58,8 +58,8 @@ $(function () {
             return "N/A";
         },
         getLogo: function (obj) {
-            return '<div class="btn-group">'
-                    + '<img src="' + baseurl + '/assets/img/' + obj.k_id_cliente + '.png" alt="' + obj.n_name_cliente + '" style="width: 35%;">'
+            return '<div class="btn-group" style="width:70px;">'
+                    + '<img src="' + baseurl + '/assets/img/' + obj.k_id_cliente + '.png" alt="' + obj.n_name_cliente + '" width="100">'
                     + '</div>';
         },
         fillTable: function (data) {
