@@ -18,7 +18,8 @@ $(function () {
                 var registro = ini.tablaClientes.row(tr).data();
                 //si selecciona el header de la tabla no se muestre el modal
                 if (registro != undefined) {
-                    ini.modalEditar(registro);
+                    location.href =  app.urlTo('CclientServices/specificClient?idCliente=' + registro.k_id_cliente);
+//                    location.href =   baseurl + '/clientService?idCliente='+registro.k_id_cliente;
                 }
             }
 
@@ -58,7 +59,7 @@ $(function () {
         },
         getLogo: function (obj) {
             return '<div class="btn-group">'
-                    + '<img src="' + baseurl + '/assets/img/' + obj.k_id_cliente + '.png" alt="' + obj.n_name_cliente + '" height="100" width="200">'
+                    + '<img src="' + baseurl + '/assets/img/' + obj.k_id_cliente + '.png" alt="' + obj.n_name_cliente + '" style="width: 35%;">'
                     + '</div>';
         },
         fillTable: function (data) {
