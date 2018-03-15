@@ -12,7 +12,7 @@
             
             <h2><strong><?php echo $_GET['cliente']; ?></strong></h2>
 
-            <div class="panel-group" id="accordion">
+           <!--  <div class="panel-group" id="accordion">
 
                 <div class="panel panel-default">
                   <div class="panel-heading panelCami">
@@ -84,7 +84,56 @@
                   </div>
                 </div>
 
-            </div> 
+            </div> --> 
+
+
+
+
+            <ul class="nav nav-tabs navCami">
+              <li class="active"><a data-toggle="tab" href="#Matriz">Matriz de Contactos</a></li>
+              <li><a data-toggle="tab" href="#Inventario">Inventario de Servicios</a></li>
+              <li><a data-toggle="tab" href="#Procesos">Procesos</a></li>
+              <li><a data-toggle="tab" href="#Reportes">Reportes</a></li>
+              <li><a data-toggle="tab" href="#DRP">DRP</a></li>
+              <li><a data-toggle="tab" href="#Cronograma">Cronograma</a></li>
+            </ul>
+
+            <div class="tab-content">
+
+              <div id="Matriz" class="tab-pane fade in active">
+                <h3>MATRIZ DE CONTACTOS</h3>
+                 <table id="tableContactos" class='table table-bordered table-striped' width='100%'></table>
+              </div>
+
+              <div id="Inventario" class="tab-pane fade">
+                <h3>INVENTARIO DE SERVICIOS</h3>
+                <table id="tableServicios" class='table table-bordered table-striped' width='100%'></table>
+              </div>
+
+              <div id="Procesos" class="tab-pane fade">
+                <h3>PROCESOS</h3>
+                contenido
+              </div>
+
+              <div id="Reportes" class="tab-pane fade">
+                <h3>REPORTES</h3>
+                contenido
+              </div>
+
+              <div id="DRP" class="tab-pane fade">
+                <h3>DRP</h3>
+                contenido
+              </div>
+
+              <div id="Cronograma" class="tab-pane fade">
+                <h3>CRONOGRAMA</h3>
+                contenido
+              </div>
+
+            </div>
+          </div>
+
+
 
 
 
